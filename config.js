@@ -5,7 +5,8 @@ module.exports = {
         plugin: [
 
             'Swearing.js',
-            'MildSwearing.js'
+            'MildSwearing.js',
+            'DublicateMessage.js'
 
         ]
 
