@@ -19,7 +19,7 @@ module.exports = Composer.on('message', (ctx, next) => {
                 if (unique.length != arr.length) {
                     arr.length = unique.length
                     ctx.deleteMessage()
-                } else if (arr.length >= 30) {
+                } else if (arr.length >= 20) {
                     arr.length = 0
                     unique.length = 0
                 }
