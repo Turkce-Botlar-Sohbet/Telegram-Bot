@@ -7,13 +7,9 @@ module.exports = Composer.on('message', (ctx, next) => {
     if (ctx.chat.type.endsWith('group')) {
         if (!ctx.from._is_in_admin_list) {
             var from = ctx.update.message.text;
-            for (i = 0; i <= 9; i++) {
-                arr.push(from + i);
-            }
-
+            arr.push(from);
             function dupes(arr) {
                 var i, len = arr.length, unique = [], obj = {};
-
                 for (i = 0; i < len; i++) {
                     obj[arr[i]] = 0;
                 }
@@ -21,9 +17,11 @@ module.exports = Composer.on('message', (ctx, next) => {
                     unique.push(i);
                 }
                 if (unique.length != arr.length) {
-                    console.log('Dublicate message!')
+                    arr.length = unique.length
                     ctx.deleteMessage()
+                } else if (arr.length >= 8) {
                     arr.length = 0
+                    unique.length = 0
                 }
             }
 
