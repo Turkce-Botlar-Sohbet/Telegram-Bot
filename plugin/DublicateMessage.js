@@ -3,7 +3,7 @@
 const Composer = require('telegraf/composer');
 
 var arr= [];
-module.exports = Composer.on('message', (ctx, next) => {
+module.exports = Composer.on('text', (ctx, next) => {
     if (ctx.chat.type.endsWith('group')) {
         if (!ctx.from._is_in_admin_list) {
             var from = ctx.update.message.text;
@@ -19,7 +19,7 @@ module.exports = Composer.on('message', (ctx, next) => {
                 if (unique.length != arr.length) {
                     arr.length = unique.length
                     ctx.deleteMessage()
-                } else if (arr.length >= 20) {
+                } else if (arr.length >= 8) {
                     arr.length = 0
                     unique.length = 0
                 }
