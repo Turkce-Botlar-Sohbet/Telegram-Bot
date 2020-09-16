@@ -3,7 +3,7 @@
 const Composer = require('telegraf/composer');
 
 var arr= [];
-module.exports = Composer.on('text', (ctx, next) => {
+module.exports = Composer.mount('text', (ctx, next) => {
     if (ctx.chat.type.endsWith('group')) {
         if (!ctx.from._is_in_admin_list) {
             var from = ctx.update.message.text;
