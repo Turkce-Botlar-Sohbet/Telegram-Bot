@@ -7,6 +7,23 @@ const URL           = process.env.URL || 'https://your-heroku-app.herokuapp.com'
 const Telegraf  = require("telegraf");
 const bot       = new Telegraf(BOT_API);
 
+const config = require('./config');
+
+async function SendMessage(message) {
+    await bot.telegram.sendMessage(config.chat_id, `${message}`, { parse_mode: 'HTML'});
+}
+
+var AutoPost = function() {
+  SendMessage('Test123')
+}
+
+var CronJob = require('cron').CronJob;
+new CronJob({
+  cronTime: "*/10 * * * *",
+  onTick: AutoPost,
+  start: true,
+  timeZone: "Europe/Moscow"
+})
 
 bot.start((ctx) => {
     return ctx.reply("Hey");
@@ -25,8 +42,7 @@ bot.command('komut', async (ctx, next) => {
 
 bot.use(
     require('./handlers/middlewares'),
-    require('./plugin'),
-    require('./clock')
+    require('./plugin')
 );
 
 
