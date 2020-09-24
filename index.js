@@ -19,7 +19,7 @@ var AutoPost = function() {
 
 var CronJob = require('cron').CronJob;
 new CronJob({
-  cronTime: "*/10 * * * *",
+  cronTime: "*/2 * * * *",
   onTick: AutoPost,
   start: true,
   timeZone: "Europe/Moscow"
