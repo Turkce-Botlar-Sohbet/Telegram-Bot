@@ -1,2 +1,2 @@
 web: npm run start
-clock: node clock.js
+clock: node index.js
