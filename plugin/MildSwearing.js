@@ -1,6 +1,6 @@
 'use strict';
 
-const Composer = require('telegraf/composer');
+const { Composer } = require('telegraf')
 
 const badWordsBan = [
     /pasif(\s+)?(var(\s+)?mı|arıyorum|im)/i, // pasif
