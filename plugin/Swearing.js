@@ -1,6 +1,6 @@
 'use strict';
 
-const Composer = require('telegraf/composer');
+const { Composer } = require('telegraf')
 
 const badWordsBan = [
     /(?:^|[^\wığüşöçĞÜŞÖÇI])([sSśŚšŠ]+(\s+)?[OoōŌøØõÕóÓòÒôÔöÖ]+(\s+)?[kKqQ]+(\s+)?[aAâÂäÄáÁuUūŪùÙúÚûÛ]+([yYýÝ]+)?(\s+)?([jìÌíÍįĮīĪîÎïÏiİ!¡ıIİ]+)?(\s+)?[mM]+)/i, // sokam
