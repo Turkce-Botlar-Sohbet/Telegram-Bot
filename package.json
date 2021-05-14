@@ -10,11 +10,11 @@
   "author": "@botsohbet",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^8.2.0",
-    "telegraf": "^3.38.0",
-    "cron": "^1.8.2"
+    "cron": "^1.8.2",
+    "dotenv": "^9.0.2",
+    "telegraf": "^4.3.0"
   },
   "engines": {
-    "node": "12.x"
+    "node": ">=12.3.1"
   }
 }
