@@ -1,11 +1,11 @@
 # **Heroku'da Webhook İle Çalışan Deneysel Bir Bot**
 
-**Nasıl Çalışır ?** (Eski yol)
+**Nasıl Çalışır ?** ###### (Eski yol)
 
 _.env dosyasını açıp [@BotFather](https://t.me/botfather)'dan aldığınız tokeni BOT_API yerine yapıştırın ve Heroku'dan aldığınız bağlantıyı URL yerine yapıştırın._
 
 
-**Nasıl Çalışır ?** (Yeni)
+**Nasıl Çalışır ?** ###### (Yeni)
 
 _Butona basın kutuları doldurun ve heroku sunucuza dağıtın._
 
