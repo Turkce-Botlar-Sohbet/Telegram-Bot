@@ -2,7 +2,7 @@
 
 **Nasıl Çalışır ?** (Eski yol)
 
-_.env dosyasını açıp @BotFather'dan aldığınız tokeni BOT_API yerine yapıştırın ve Heroku'dan aldığınız bağlantıyı URL yerine yapıştırın._
+_.env dosyasını açıp [@BotFather](https://t.me/botfather)'dan aldığınız tokeni BOT_API yerine yapıştırın ve Heroku'dan aldığınız bağlantıyı URL yerine yapıştırın._
 
 
 **Nasıl Çalışır ?** (Yeni)
