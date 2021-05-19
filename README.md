@@ -5,9 +5,9 @@
 _.env dosyasını açıp [@BotFather](https://t.me/botfather)'dan aldığınız tokeni BOT_API yerine yapıştırın ve Heroku'dan aldığınız bağlantıyı URL yerine yapıştırın._
 
 
-**Nasıl Çalışır ?** (Yeni)
+**Nasıl Çalışır ?** (Yeni yol)
 
-_Butona basın kutuları doldurun ve heroku sunucuza dağıtın._
+_Butona basın kutuları doldurun ve heroku sunucunuza dağıtın._
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
