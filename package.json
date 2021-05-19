@@ -1,6 +1,6 @@
 {
   "name": "Telegram_Bot",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Eğitim amaçlı basit bir telegram botu.",
   "main": "index.js",
   "scripts": {
