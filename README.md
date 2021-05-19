@@ -11,5 +11,5 @@ _Butona basın kutuları doldurun ve heroku sunucuza dağıtın._
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-Detaylı Bilgi İçin: https://telegra.ph/KENDİ-TELEGRAM-BOTUNUZU-YAPIN-09-11
+Detaylı Bilgi İçin: [Buraya Tıkla](https://telegra.ph/KENDİ-TELEGRAM-BOTUNUZU-YAPIN-09-11)
 
