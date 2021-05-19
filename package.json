@@ -1,13 +1,13 @@
 {
-  "name": "Test_Bot",
-  "version": "1.0.0",
-  "description": "",
+  "name": "Telegram_Bot",
+  "version": "1.0.1",
+  "description": "Eğitim amaçlı basit bir telegram botu.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "keywords": [],
-  "author": "@botsohbet",
+  "keywords": ["telegram", "bot"],
+  "author": "https://t.me/botsohbet",
   "license": "ISC",
   "dependencies": {
     "cron": "^1.8.2",
