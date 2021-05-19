@@ -21,10 +21,10 @@ const config = require('./config');
 
 //var CronJob = require('cron').CronJob;
 //new CronJob({
-//  cronTime: "*/2 * * * *",
+//  cronTime: "00 12,18 * * *", // Hergün öğlen 12 ve akşam 18′de Çalışacak Crontab Girdisi
 //  onTick: AutoPost,
 //  start: true,
-//  timeZone: "Europe/Moscow"
+//  timeZone: "Europe/Moscow" // Buna dokunmayın Türkiye saati ile uyumlu
 //})
 
 bot.start((ctx) => {
