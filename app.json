@@ -1,0 +1,32 @@
+{
+  "name": "Telegram_Bot",
+  "description": "Eğitim amaçlı basit bir telegram botu.",
+  "repository": "https://github.com/Turkce-Botlar-Sohbet/Telegram-Bot",
+  "logo": "https://avatars.githubusercontent.com/u/71149025",
+  "keywords": ["telegram", "bot"],
+  "env": {
+    "BOT_API": {
+      "description": "@BotFather'dan oluşturduğunuz botun tokeni.",
+      "value": ""
+    },
+    "URL": {
+      "description": "deneyselbot yerine kendi Heroku uygulamamızın adını yazın.",
+      "value": "https://deneyselbot.herokuapp.com/"
+    },
+    "PORT": {
+      "description": "Bu kalsın.",
+      "value": "80",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  }
+}
