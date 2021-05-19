@@ -9,21 +9,23 @@ const bot       = new Telegraf(BOT_API);
 
 const config = require('./config');
 
-async function SendMessage(message) {
-    await bot.telegram.sendMessage(config.chat_id, `${message}`, { parse_mode: 'HTML'});
-}
 
-var AutoPost = function() {
-  SendMessage('Test123')
-}
+////////////////////////////OTOMATİK MESAJ ATMA KODU ÇALIŞTIRMAK İÇİN BAŞLANRINDAKİ // İŞARETİNİ KALDIRIN VE config.js DOSYASINA KENDİ ID NUMARANIZI EKLEYİN//////////////
+//async function SendMessage(message) {
+//    await bot.telegram.sendMessage(config.chat_id, `${message}`, { parse_mode: 'HTML'});
+//}
 
-var CronJob = require('cron').CronJob;
-new CronJob({
-  cronTime: "*/2 * * * *",
-  onTick: AutoPost,
-  start: true,
-  timeZone: "Europe/Moscow"
-})
+//var AutoPost = function() {
+//  SendMessage('Test123')
+//}
+
+//var CronJob = require('cron').CronJob;
+//new CronJob({
+//  cronTime: "*/2 * * * *",
+//  onTick: AutoPost,
+//  start: true,
+//  timeZone: "Europe/Moscow"
+//})
 
 bot.start((ctx) => {
     return ctx.reply("Hey");
