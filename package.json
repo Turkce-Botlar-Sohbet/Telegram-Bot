@@ -10,7 +10,6 @@
   "author": "https://t.me/botsohbet",
   "license": "ISC",
   "dependencies": {
-    "cron": "^1.8.2",
     "dotenv": "^9.0.2",
     "telegraf": "^4.3.0"
   },
