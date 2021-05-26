@@ -8,12 +8,12 @@ Webhook site: <a href="https://deneyselbot.herokuapp.com/"><strong>Heroku Webhoo
 
 
 
-**Nasıl Kurulur?** <sub>(Eski yol)</sup>
+**Nasıl Kurulur?** <sub>(Tavsiye edilen)</sup>
 
 _Bu depoyu kendi hesabınıza "Fork" edin ve [.env](./.env) dosyasını açıp [@BotFather](https://t.me/botfather)'dan aldığınız tokeni [BOT_API](./.env) yerine yapıştırın ve Heroku'dan aldığınız bağlantıyı [URL](./.env) yerine yapıştırın daha sonra Heroku sunucunuza deploy edin detaylı anlatım için: [Tıklayın](https://telegra.ph/KENDİ-TELEGRAM-BOTUNUZU-YAPIN-09-11)._
 
 
-**Heroku ile Kolay Kurulum** <sub>(Yeni yol)</sup>
+**Kolay Kurulum**
 
 _Butona basın kutuları doldurun ve heroku sunucunuza dağıtın._
 
