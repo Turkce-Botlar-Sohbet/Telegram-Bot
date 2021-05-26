@@ -10,11 +10,11 @@
       "value": ""
     },
     "URL": {
-      "description": "deneyselbot yerine kendi Heroku uygulamamızın adını yazın.",
+      "description": "deneyselbot yerine yukarda app-name yerine yazdığınız adı buraya da yazın.",
       "value": "https://deneyselbot.herokuapp.com/"
     },
     "PORT": {
-      "description": "Bu kalsın.",
+      "description": "Bu kalabilir. (İsteğe bağlı)",
       "value": "80",
       "required": false
     }
