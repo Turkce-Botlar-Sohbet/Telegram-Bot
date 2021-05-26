@@ -1,8 +1,13 @@
-# **Heroku'da Webhook İle Çalışan Deneysel Bir Bot**
+<h1 align="center">Heroku'da Webhook İle Çalışan Deneysel Bir Bot</h1>
 
-Çalışan bir örnek: [T-Rex 🦖](https://t.me/tiranozorbot) 
-
-Webhook site: https://deneyselbot.herokuapp.com/
+<h2 align="center">
+Çalışan bir örnek: 
+<br /> 
+[T-Rex 🦖](https://t.me/tiranozorbot)
+Webhook site: 
+<br />
+https://deneyselbot.herokuapp.com/
+</h2>
 
 
 
