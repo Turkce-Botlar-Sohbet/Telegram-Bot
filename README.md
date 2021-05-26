@@ -3,10 +3,10 @@
 <h2 align="center">
 Çalışan bir örnek: 
 <br /> 
-[T-Rex 🦖](https://t.me/tiranozorbot)
+<a href="https://t.me/tiranozorbot"><strong>T-Rex 🦖 »</strong></a>
 Webhook site: 
 <br />
-https://deneyselbot.herokuapp.com/
+<a href="https://deneyselbot.herokuapp.com/"><strong>Heroku Webhook »</strong></a>
 </h2>
 
 
