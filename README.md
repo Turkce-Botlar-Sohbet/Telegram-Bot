@@ -6,7 +6,9 @@
 Webhook site: <a href="https://deneyselbot.herokuapp.com/"><strong>Heroku Webhook »</strong></a>
 </h4>
 
-<h2 align="center">Nasıl Kurulur?t</h2>
+<hr>
+
+<h3 align="center">Nasıl Kurulur?</h3>
 
 **Zor Kurulum** <sub>(Tavsiye edilen)</sup>
 
