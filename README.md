@@ -1,12 +1,9 @@
 <h1 align="center">Heroku'da Webhook İle Çalışan Deneysel Bir Bot</h1>
 
 <h2 align="center">
-Çalışan bir örnek: 
+Çalışan bir örnek: <a href="https://t.me/tiranozorbot"><strong>T-Rex 🦖 »</strong></a>
 <br /> 
-<a href="https://t.me/tiranozorbot"><strong>T-Rex 🦖 »</strong></a>
-Webhook site: 
-<br />
-<a href="https://deneyselbot.herokuapp.com/"><strong>Heroku Webhook »</strong></a>
+Webhook site: <a href="https://deneyselbot.herokuapp.com/"><strong>Heroku Webhook »</strong></a>
 </h2>
 
 
