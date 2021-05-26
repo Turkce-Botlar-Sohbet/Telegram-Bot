@@ -1,5 +1,9 @@
 <h1 align="center">Heroku'da Webhook İle Çalışan Deneysel Bir Bot</h1>
-
+<p align="center">
+  <a href="https://github.com/AbirHasan2005/Pyro-FileStreamBot">
+    <img src="https://socialify.git.ci/Turkce-Botlar-Sohbet/Telegram_Bot/image?description=1&font=Bitter&forks=1&issues=1&logo=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F71149025%3Fs%3D200%26v%3D4&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Light" alt="Cover Image" width="500">
+  </a>
+  <p align="center">
 <h4 align="center">
 Çalışan bir örnek: <a href="https://t.me/tiranozorbot"><strong>T-Rex 🦖 »</strong></a>
 <br /> 
