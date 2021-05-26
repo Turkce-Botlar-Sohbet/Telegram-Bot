@@ -19,6 +19,14 @@ _Butona basın kutuları doldurun ve heroku sunucunuza dağıtın._
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
+## Komutlar
+Komut                   | Açıklama
+----------------------- | ----------------------------------------    
+`/start`                | Bota start verdiğinizde atılan ilk mesaj.
+`/botsohbet`            | Size bir video gönderir.
+`/selam`                | Fotoğraf gönderir.     
+`/komut`                | Telegram adınızı gönderir.   
+
 Detaylı Bilgi İçin: [Buraya Tıkla](https://telegra.ph/KENDİ-TELEGRAM-BOTUNUZU-YAPIN-09-11)
 
 Botun Yazımında Kullanılan Kütüphane: [telegraf.js](https://telegraf.js.org)
