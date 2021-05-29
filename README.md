@@ -38,4 +38,4 @@ Botun Yazımında Kullanılan Kütüphane: [telegraf.js](https://telegraf.js.org
 
 ### Telif Hakkı ve Lisans
 - Copyright &copy; 2021 &mdash; [Türkçe Botlar Sohbet](https://t.me/botsohbet)
-- Licensed under the terms of the [MIT License](./LICENSE)
+- [MIT License](./LICENSE)
