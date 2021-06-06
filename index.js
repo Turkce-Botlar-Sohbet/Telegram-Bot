@@ -42,6 +42,45 @@ bot.command('komut', async (ctx, next) => {
 });
 
 
+async function searchMessage(ctx){
+    await ctx.reply('<b>Hangi arama motorunu kullanmak istiyorsunuz?</b>', {
+        parse_mode: 'HTML',
+        ...Markup.inlineKeyboard([
+            [Markup.button.url('Google', 'www.google.com')],
+            [ Markup.button.callback('Yok ben almıyım.', 'kapat'), Markup.button.callback('Diğer', 'all')]
+        ])
+    })
+}
+
+
+bot.action('all', async (ctx) => {
+    await ctx.answerCbQuery()
+    await ctx.editMessageText('Yandex, DuckDuckGo, Yahoo ?', Markup.inlineKeyboard([
+        [Markup.button.url('Yandex', 'https://yandex.com.tr/'), Markup.button.url('DuckDuckGo', 'https://duckduckgo.com/')],
+        [Markup.button.url('Yahoo', 'https://www.yahoo.com/')],
+        [Markup.button.callback('Geri', 'geri')]
+    ]))
+})
+
+
+bot.action('geri', ctx => {
+    ctx.deleteMessage()
+    searchMessage(ctx)
+})
+
+
+bot.action('kapat', ctx => {
+    ctx.answerCbQuery()
+    ctx.deleteMessage()
+});
+
+
+bot.command("buton", ctx => {
+    ctx.deleteMessage()
+    searchMessage(ctx)
+})
+
+
 bot.use(
     require('./handlers/middlewares'),
     require('./plugin')
