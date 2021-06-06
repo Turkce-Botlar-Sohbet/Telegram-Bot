@@ -90,18 +90,18 @@ function getUserLink(user) {
 
 
 bot.command("who", async (ctx) => {
-                const Id = ctx.message.reply_to_message ? ctx.message.reply_to_message.from.id : ctx.message.from.id;
-                const messageId = ctx.message.reply_to_message ? ctx.message.reply_to_message.message_id : null;
-                const photoInfo = await ctx.telegram.getUserProfilePhotos(Id);
-                const photoId = photoInfo.photos[0]?.[0]?.file_id;
-                const getUserInfo = await ctx.telegram.getChat(Id);
-                const getUser = [getUserInfo].map(getUserLink).join(', ')
-                if (photoId) {
-                    return ctx.replyWithPhoto(photoId, { caption: getUser, parse_mode: 'HTML', reply_to_message_id: messageId  })
-                } else {
-                    return ctx.replyWithHTML(getUser,  { reply_to_message_id: messageId })
-                }
-});            
+    const Id = ctx.message.reply_to_message ? ctx.message.reply_to_message.from.id : ctx.message.from.id;
+    const messageId = ctx.message.reply_to_message ? ctx.message.reply_to_message.message_id : null;
+    const photoInfo = await ctx.telegram.getUserProfilePhotos(Id);
+    const photoId = photoInfo.photos[0]?.[0]?.file_id;
+    const getUserInfo = await ctx.telegram.getChat(Id);
+    const getUser = [getUserInfo].map(getUserLink).join(', ')
+    if (photoId) {
+        return ctx.replyWithPhoto(photoId, { caption: getUser, parse_mode: 'HTML', reply_to_message_id: messageId  })
+    } else {
+        return ctx.replyWithHTML(getUser,  { reply_to_message_id: messageId })
+    }
+});
 
 
 bot.use(
