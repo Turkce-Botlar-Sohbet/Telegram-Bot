@@ -81,6 +81,29 @@ bot.command("buton", ctx => {
 })
 
 
+function getUserLink(user) {
+    const lastName = user.last_name ? ` ${user.last_name}` : '';
+    const username = user.username ? ` \nKullanıcı Adı: @${user.username}` : '';
+    const userBio = user.bio ? ` \nBio: ${user.bio}` : '';
+    return `<a href="tg://user?id=${user.id}">${user.first_name}${lastName}</a>${username}${userBio}\nID: <code>${user.id}</code>`;
+}
+
+
+bot.command("who", async (ctx) => {
+                const Id = ctx.message.reply_to_message ? ctx.message.reply_to_message.from.id : ctx.message.from.id;
+                const messageId = ctx.message.reply_to_message ? ctx.message.reply_to_message.message_id : null;
+                const photoInfo = await ctx.telegram.getUserProfilePhotos(Id);
+                const photoId = photoInfo.photos[0]?.[0]?.file_id;
+                const getUserInfo = await ctx.telegram.getChat(Id);
+                const getUser = [getUserInfo].map(getUserLink).join(', ')
+                if (photoId) {
+                    return ctx.replyWithPhoto(photoId, { caption: getUser, parse_mode: 'HTML', reply_to_message_id: messageId  })
+                } else {
+                    return ctx.replyWithHTML(getUser,  { reply_to_message_id: messageId })
+                }
+});            
+
+
 bot.use(
     require('./handlers/middlewares'),
     require('./plugin')
