@@ -27,6 +27,7 @@ Komut                   | Açıklama
 `selam`                 | Fotoğraf gönderir.     
 `/komut`                | Telegram adınızı gönderir.
 `/buton`                | Butonlu mesaj gönderir.
+`/who`                  | Kullanıcı bilgilerini gönderir.
 
 Detaylı Bilgi İçin: [Buraya Tıkla](https://telegra.ph/KENDİ-TELEGRAM-BOTUNUZU-YAPIN-09-11)
 
