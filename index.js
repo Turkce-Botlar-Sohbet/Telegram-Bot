@@ -4,7 +4,7 @@ const BOT_API       = process.env.BOT_API || '';
 const PORT          = process.env.PORT || 3000;
 const URL           = process.env.URL || 'https://your-heroku-app.herokuapp.com';
 
-const { Telegraf } = require('telegraf')
+const { Telegraf, Markup } = require('telegraf')
 const bot       = new Telegraf(BOT_API);
 
 const config = require('./config');
